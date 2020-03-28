@@ -1,0 +1,72 @@
+.landing {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 93vh;
+  padding: 0rem 7rem;
+  background-image: url('../../assets/imgs/profile-image.png');
+  background-size: cover;
+  background-position: 71px -218px;
+  background-repeat: no-repeat;
+
+  &__info {
+    align-self: center;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+  }
+
+  &__skills {
+    font-size: 1.3rem;
+    color: var(--bc-header-txt);
+  }
+
+  &__name {
+    color: #ed5565;
+  }
+
+  &__btnContact {
+    all: unset;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    padding: 2rem 3rem;
+    border: 1px solid var(--cl-btn-border);
+    overflow: hidden;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--cl-btn-border);
+      z-index: -1;
+      transition: 0.3s;
+    }
+
+    &:hover::before {
+      transform: translateY(100%);
+    }
+  }
+}
+
+// ------------------------------
+// media
+// ------------------------------
+// 768px
+@media (max-width: 48rem) {
+  .landing {
+    background-position: -39px -116px;
+  }
+}
+
+// 600px
+@media (max-width: 37.5rem) {
+  .landing {
+    padding: 0rem 5rem;
+  }
+}

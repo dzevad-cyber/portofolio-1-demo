@@ -1,0 +1,67 @@
+.contact {
+  display: grid;
+  background-color: var(--bc-body);
+  align-content: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 3rem;
+
+  &__content {
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 1rem;
+    grid-template-columns: 300px;
+  }
+
+  &__input {
+    all: unset;
+    padding: 1rem;
+    border: 1px solid var(--cl-btn-border);
+    color: #fff;
+    font-size: 1.6rem;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    font-size: 15rem;
+    font-weight: 700;
+    color: #707070;
+    padding: 3rem;
+    opacity: 0.2;
+    letter-spacing: 1.5rem;
+    justify-self: end;
+  }
+
+  &__btn {
+    all: unset;
+    text-transform: capitalize;
+    padding: 2rem;
+    background-color: var(--cl-btn-border);
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+  }
+
+  &__summary {
+    height: 120px;
+    background-color: transparent;
+    color: #fff;
+    padding: 0.5rem;
+    border: 1px solid var(--cl-btn-border);
+    resize: none;
+  }
+}
+
+// ------------------------------
+// media
+// ------------------------------
+// 600px
+@media (max-width: 37.5rem) {
+  .contact {
+    &__title {
+      font-size: 7rem;
+    }
+  }
+}
