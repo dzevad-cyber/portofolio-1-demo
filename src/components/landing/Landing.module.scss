@@ -4,8 +4,8 @@
   grid-template-rows: 93vh;
   padding: 0rem 7rem;
   background-image: url('../../assets/imgs/profile-image.png');
-  background-size: cover;
-  background-position: 71px -218px;
+  background-size: contain;
+  background-position: right center;
   background-repeat: no-repeat;
 
   &__info {
@@ -60,7 +60,7 @@
 // 768px
 @media (max-width: 48rem) {
   .landing {
-    background-position: -39px -116px;
+    background-size: cover;
   }
 }
 
