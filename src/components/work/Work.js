@@ -9,7 +9,7 @@ const Work = ({ data }) => {
   let [projects, setProjects] = useState(data.webDesign);
 
   return (
-    <section className={styles.work}>
+    <section id='work' className={styles.work}>
       <h1 className={styles.work__title}>work</h1>
       <div className={styles.work__content}>
         <WorkNav data={data} setProjects={setProjects} />

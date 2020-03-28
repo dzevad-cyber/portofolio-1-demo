@@ -5,7 +5,7 @@
   padding: 0rem 7rem;
   background-image: url('../../assets/imgs/profile-image.png');
   background-size: contain;
-  background-position: right center;
+  background-position: right 20% center;
   background-repeat: no-repeat;
 
   &__info {
@@ -28,11 +28,17 @@
   &__btnContact {
     all: unset;
     margin-top: 5rem;
-    font-size: 1.5rem;
-    padding: 2rem 3rem;
     border: 1px solid var(--cl-btn-border);
     overflow: hidden;
     cursor: pointer;
+    display: grid;
+    place-items: center;
+
+    & a {
+      all: unset;
+      font-size: 1.5rem;
+      padding: 2rem 3rem;
+    }
 
     position: relative;
     z-index: 1;
